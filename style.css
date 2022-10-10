@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;700;800&family=Josefin+Sans:ital,wght@0,400;0,500;1,400&display=swap");
+
+:root {
+  --font-family: "Crete Round", serif;
+  --font-family: "Inter", sans-serif;
+  --font-family: "Josefin Sans", sans-serif;
+  --blue: #1992d4;
+  --light-gray: #e2e8f0;
+  --dark-yellow: #f0b429;
+  --pink: #fda4af;
+  --gray: #a3a3a3;
+  --gray-blue: #e0f2fe;
+  --sun-yellow: #facc15;
+}
