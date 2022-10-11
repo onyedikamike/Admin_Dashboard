@@ -8,45 +8,97 @@
     <title>Admin_Dashboard</title>
   </head>
   <body>
-    <main>
+    <aside>
       <nav>
-        <div>
-          <div>
+        <div class="dashboard">
+          <div class="dashboard_drawer">
             <img src="images/view-dashboard-outline.png" alt="dashboard" />
-            Dashboard
+            <h1>Dashboard</h1>
           </div>
-          <ul>
-            <li><img src="images/home.png" alt="Home" /> Home</li>
-            <li>
-              <img src="images/card-account-details.png" alt="profile" />
-              Profile
-            </li>
-            <li>
-              <img src="images/message-reply.png" alt="message" /> Message
-            </li>
-            <li>
-              <img src="images/clock-time-three-outline.png" alt="clock" />
-              History
-            </li>
-            <li><img src="images/file-multiple.png" alt="tasks" /> Tasks</li>
-            <li>
-              <img src="images/account-group.png" alt="communities" />
-              Communities
-            </li>
-          </ul>
+          <div class="dashboard_drawer">
+            <img src="images/home.png" alt="Home" />
+            <h1>Home</h1>
+          </div>
+          <div class="dashboard_drawer">
+            <img src="images/card-account-details.png" alt="profile" />
+            <h1>Profile</h1>
+          </div>
+          <div class="dashboard_drawer">
+            <img src="images/message-reply.png" alt="message" />
+            <h1>Message</h1>
+          </div>
+          <div class="dashboard_drawer">
+            <img src="images/clock-time-three-outline.png" alt="clock" />
+            <h1>History</h1>
+          </div>
+          <div class="dashboard_drawer">
+            <img src="images/file-multiple.png" alt="tasks" />
+            <h1>Tasks</h1>
+          </div>
+          <div class="dashboard_drawer">
+            <img src="images/account-group.png" alt="communities" />
+            <h1>Communities</h1>
+          </div>
 
-          <ul>
-            <li>
-              <img src="images/cog-outline.png" alt="settings" /> Settings
-            </li>
-            <li>
-              <img src="images/folder-question-outline.png" alt="support" />
-              Support
-            </li>
-            <li><img src="images/shield-check.png" alt="privacy" /> Privacy</li>
-          </ul>
+          <!-- extra spacing -->
+          <div class="dashboard_drawer">
+            <img src="images/cog-outline.png" alt="settings" />
+            <h1>Settings</h1>
+          </div>
+          <div class="dashboard_drawer">
+            <img src="images/folder-question-outline.png" alt="support" />
+            <h1>Support</h1>
+          </div>
+          <div class="dashboard_drawer">
+            <img src="images/shield-check.png" alt="privacy" />
+            <h1>Privacy</h1>
+          </div>
         </div>
       </nav>
-    </main>
+    </aside>
+    <header>
+      <div class="header">
+        <!-- top headers -->
+        <div class="header-top">
+          <div class="search">
+            <div class="search_item">
+              <img src="images/magnify.png" alt="magnify" />
+            </div>
+            <input type="search" name="search" />
+          </div>
+          <div class="first_logo">
+            <div class="morgan">
+              <img src="images/bell-ring-outline.png" alt="bel" />
+            </div>
+            <div class="baller">
+              <img src="images/dashboard logo.png" alt="small logo" />
+            </div>
+            <p class="name">Morgan Oakley</p>
+          </div>
+        </div>
+
+        <!-- header bottom -->
+        <div class="header_bottom">
+          <div class="profile_pics">
+            <div class="second_logo">
+              <img src="images/dashboard logo.png" alt="big logo" />
+            </div>
+            <div class="pro_name">
+              <p class="hello">Hi there,</p>
+              <p class="big_name">
+                Morgan Oakley <span class="user_home">(@morgan)</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- button sec -->
+          <div class="button">
+            <button class="btn">New</button>
+            <button class="btn">Upload</button>
+            <button class="btn">Share</button>
+          </div>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
