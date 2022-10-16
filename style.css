@@ -116,7 +116,7 @@ header {
   display: inline-block;
   border: none;
   background-color: var(--light-gray);
-  width: min(80%, 35rem);
+  width: min(80%, 30rem);
   padding: 0.3rem 1.5rem;
   margin-left: 1.25rem;
   border-radius: 12px;
@@ -127,7 +127,7 @@ header {
   justify-content: space-around;
   align-items: center;
   font-weight: bold;
-  margin-left: 15px;
+  margin-left: 10px;
   margin-right: 25px;
   padding-bottom: 40px;
 }
@@ -135,14 +135,63 @@ header {
 .first_logo img {
   border-radius: 50%;
   margin-left: 10px;
-  margin-right: 35px;
+  margin-right: 20px;
 }
+
+.baller_small {
+  width: 50%;
+}
+
 div.morgan {
-  margin-right: 15px;
+  margin-right: 10px;
   padding-bottom: 10px;
 }
+
 .first_logo p {
   font-size: 16px;
   padding-bottom: 10px;
-  padding-left: 10px;
+  padding-left: 7px;
+}
+
+.header_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile_pics {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.second_logo img {
+  width: 65px;
+  border-radius: 50%;
+}
+
+.hello {
+  margin-bottom: 5px;
+  font-size: small;
+  font-weight: bold;
+}
+
+.big_name {
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+}
+
+.btn {
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  padding: 8px 30px;
+  font-size: 18px;
+  border-radius: 20px;
 }
