@@ -12,3 +12,81 @@
   --gray-blue: #e0f2fe;
   --sun-yellow: #facc15;
 }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "inter", sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 12rem 1fr 1fr 1fr;
+  grid-template-rows: 1fr 4fr;
+  height: 100vh;
+  grid-template-areas:
+    "drawer nav nav nav"
+    "drawer content content content";
+}
+
+.dashboard {
+  grid-area: drawer;
+  background-color: var(--blue);
+  width: 13rem;
+  position: fixed;
+  height: 100vh;
+}
+
+.header {
+  grid-area: nav;
+}
+
+.layout {
+  grid-area: content;
+}
+
+.navbar_icons {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 18px;
+  margin-right: 19px;
+}
+
+.navbar_draw li {
+  display: flex;
+  padding-left: 20px;
+  color: white;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+.dashboard_drawer {
+  padding-top: 15px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 25px;
+}
+.dashboard_drawer img {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  margin-right: 12px;
+  padding-left: 15px;
+}
+.dashboard_drawer h1 {
+  padding-top: 5px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.dashboard > ul :nth-child(7) {
+  padding-top: 50px;
+}
