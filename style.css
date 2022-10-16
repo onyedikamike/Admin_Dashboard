@@ -90,7 +90,7 @@
 
 header {
   grid-area: nav;
-  background-color: var(--gray-blue);
+  background-color: var(--pink);
   padding: 1.5rem 3rem;
 }
 
@@ -124,15 +124,25 @@ header {
 
 .first_logo {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   align-items: center;
   font-weight: bold;
+  margin-left: 15px;
+  margin-right: 25px;
+  padding-bottom: 40px;
 }
 
 .first_logo img {
   border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 35px;
 }
-
-.first_logo > div :nth-child(2) {
-  border-radius: 50%;
+div.morgan {
+  margin-right: 15px;
+  padding-bottom: 10px;
+}
+.first_logo p {
+  font-size: 16px;
+  padding-bottom: 10px;
+  padding-left: 10px;
 }
