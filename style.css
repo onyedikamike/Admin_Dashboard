@@ -25,6 +25,7 @@
   grid-template-columns: 12rem 1fr 1fr 1fr;
   grid-template-rows: 1fr 4fr;
   height: 100vh;
+  width: 100vw;
   grid-template-areas:
     "drawer nav nav nav"
     "drawer content content content";
@@ -36,10 +37,6 @@
   width: 13rem;
   position: fixed;
   height: 100vh;
-}
-
-.header {
-  grid-area: nav;
 }
 
 .layout {
@@ -88,5 +85,54 @@
 }
 
 .dashboard > ul :nth-child(7) {
-  padding-top: 50px;
+  padding-top: 3.13rem;
+}
+
+header {
+  grid-area: nav;
+  background-color: var(--gray-blue);
+  padding: 1.5rem 3rem;
+}
+
+.header-top {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  margin-bottom: 2.5rem;
+  height: 50px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.search_item img {
+  padding-top: 5px;
+}
+
+.search > input {
+  display: inline-block;
+  border: none;
+  background-color: var(--light-gray);
+  width: min(80%, 35rem);
+  padding: 0.3rem 1.5rem;
+  margin-left: 1.25rem;
+  border-radius: 12px;
+}
+
+.first_logo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: bold;
+}
+
+.first_logo img {
+  border-radius: 50%;
+}
+
+.first_logo > div :nth-child(2) {
+  border-radius: 50%;
 }
