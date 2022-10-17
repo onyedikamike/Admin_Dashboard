@@ -39,10 +39,6 @@
   height: 100vh;
 }
 
-.layout {
-  grid-area: content;
-}
-
 .navbar_icons {
   color: white;
   display: flex;
@@ -91,7 +87,7 @@
 header {
   grid-area: nav;
   background-color: var(--pink);
-  padding: 1.5rem 3rem;
+  padding: 1.5rem 3rem 1.5rem 4rem;
 }
 
 .header-top {
@@ -194,4 +190,68 @@ div.morgan {
   padding: 8px 30px;
   font-size: 18px;
   border-radius: 20px;
+}
+
+.layout {
+  grid-area: content;
+  background-color: var(--gray);
+  padding: 3.5rem 2rem 2rem 3rem;
+  gap: 2rem;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr min-content;
+  height: 100%;
+  grid-template-areas:
+    "projects announcements"
+    "project trending";
+}
+.cards h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 13px;
+}
+
+.project {
+  grid-area: projects;
+  display: grid;
+  gap: 2rem;
+  grid-auto-rows: 250px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.all_cards {
+  background-color: var(--light-gray);
+  border-left: 10px solid var(--sun-yellow);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.cards_title {
+  font-size: 17px;
+  margin-bottom: 10px;
+  padding-top: 25px;
+  padding-left: 20px;
+}
+
+.lorem_text {
+  padding-left: 20px;
+  overflow: hidden;
+}
+
+.cards_icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+  align-self: flex-end;
+  margin-top: auto;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  margin-right: 8px;
+  margin-bottom: 15px;
+}
+
+.announcement {
+  grid-area: announcements;
 }
