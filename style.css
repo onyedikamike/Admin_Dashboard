@@ -208,7 +208,7 @@ main {
 .card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 250px;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "project project aside"
     "project project downside";
@@ -220,7 +220,7 @@ main {
 .card-container .first_article {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* grid-row: 200px; */
+  grid-row: auto;
   grid-area: project;
   justify-content: center;
   gap: 20px;
@@ -228,7 +228,7 @@ main {
 
 .card-container .content_cards {
   padding: 20px;
-  background: var(--pink);
+  background: var(--gray-blue);
   border-left: 10px solid orange;
   border-radius: 10px;
 }
@@ -240,10 +240,24 @@ main {
   justify-content: space-between;
 }
 
+.announcement {
+  background-color: white;
+}
+
 .announcement_trend li {
   list-style: none;
 }
 
-.trending {
+.trending ul {
   margin-top: 50px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.trending_list img {
+  border-radius: 50%;
+  width: 50px;
 }
