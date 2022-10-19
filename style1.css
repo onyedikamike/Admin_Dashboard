@@ -1,16 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;700;800&family=Josefin+Sans:ital,wght@0,400;0,500;1,400&display=swap");
-
 root {
   --font-family: "Crete Round", serif;
   --font-family: "Inter", sans-serif;
   --font-family: "Josefin Sans", sans-serif;
-  --blue: #1992d4;
   --light-gray: #e2e8f0;
   --dark-yellow: #f0b429;
-  --pink: #fda4af;
   --gray: #a3a3a3;
   --gray-blue: #e0f2fe;
-  --sun-yellow: #facc15;
 }
 
 * {
@@ -26,13 +21,13 @@ root {
   height: 100vh;
   display: grid;
   grid-template-columns: 13rem repeat(3, 1fr);
-  grid-template-rows: 200px repeat(4, 1fr);
+  grid-template-rows: 170px repeat(4, 1fr);
 }
 
 aside {
   grid-column: 1 / 2;
   grid-row: 1 / 6;
-  background-color: #1992d4;
+  background-color: blue;
 }
 /* styling of the navigation bar */
 
@@ -83,10 +78,115 @@ nav > ul :nth-child(7) {
   padding-top: 3.13rem;
 }
 
+/* header styling */
+
 header {
-  border: 1px solid green;
   grid-column: 2 / 5;
-  background-color: aquamarine;
+  background-color: skyblue;
+  padding: 1.5rem 3rem 2rem 3.5rem;
+}
+
+header .header-top {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  margin-bottom: 2.5rem;
+  height: 30px;
+}
+
+header .search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+header > img {
+  padding-top: 5px;
+}
+
+header .search > input {
+  display: inline-block;
+  border: none;
+  background-color: lightgray;
+  width: min(90%, 37rem);
+  padding: 0.3rem 1.5rem;
+  margin-left: 1.25rem;
+  border-radius: 12px;
+}
+
+header .top_header_side {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  padding-bottom: 40px;
+  padding-right: 40px;
+}
+
+header .top_header_side img {
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+header .top_logo {
+  width: 50%;
+}
+
+header .bell_icon {
+  margin-right: 10px;
+  padding-bottom: 10px;
+}
+
+header .top_header_side p {
+  font-size: 16px;
+  padding-bottom: 10px;
+  padding-left: 7px;
+}
+
+header .header_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .profile_pics {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+header .second_logo img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+header .greetings {
+  margin-bottom: 5px;
+  font-size: small;
+  font-weight: bold;
+}
+
+header .bottom_name {
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+header .button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+  padding-right: 25px;
+}
+
+header .btn {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 8px 30px;
+  font-size: 14px;
+  border-radius: 20px;
 }
 
 section {
