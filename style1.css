@@ -26,7 +26,7 @@ root {
   height: 100vh;
   display: grid;
   grid-template-columns: 13rem repeat(3, 1fr);
-  grid-template-rows: 130px repeat(4, 1fr);
+  grid-template-rows: 200px repeat(4, 1fr);
 }
 
 aside {
@@ -86,7 +86,7 @@ nav > ul :nth-child(7) {
 header {
   border: 1px solid green;
   grid-column: 2 / 5;
-  background-color: #f0b429;
+  background-color: aquamarine;
 }
 
 section {
