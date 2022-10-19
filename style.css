@@ -207,11 +207,9 @@ main {
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "project project aside"
-    "project project downside";
+    "project project aside";
   gap: 20px;
   padding: 20px;
   height: 100%;
