@@ -1,96 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin_Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
   </head>
   <body>
-    <div class="container">
+    <!-- Main container -->
+    <main class="main-container">
       <aside>
         <nav>
-          <div class="dashboard">
-            <div class="dashboard_drawer">
-              <img src="images/view-dashboard-outline.png" alt="dashboard" />
-              <h1>Dashboard</h1>
-            </div>
-            <ul class="navbar_draw">
-              <li>
-                <img
-                  src="images/home.png"
-                  alt="Home"
-                  class="navbar_icons"
-                />Home
-              </li>
-
-              <li>
-                <img
-                  src="images/card-account-details.png"
-                  alt="profile"
-                  class="navbar_icons"
-                />Profile
-              </li>
-              <li>
-                <img
-                  src="images/message-reply.png"
-                  alt="message"
-                  class="navbar_icons"
-                />Message
-              </li>
-
-              <li>
-                <img
-                  src="images/clock-time-three-outline.png"
-                  alt="clock"
-                  class="navbar_icons"
-                />History
-              </li>
-
-              <li>
-                <img
-                  src="images/file-multiple.png"
-                  alt="tasks"
-                  class="navbar_icons"
-                />Tasks
-              </li>
-
-              <li>
-                <img
-                  src="images/account-group.png"
-                  alt="communities"
-                  class="navbar_icons"
-                />Communities
-              </li>
-
-              <!-- extra spacing -->
-
-              <li>
-                <img
-                  src="images/cog-outline.png"
-                  alt="settings"
-                  class="navbar_icons"
-                />Settings
-              </li>
-
-              <li>
-                <img
-                  src="images/folder-question-outline.png"
-                  alt="support"
-                  class="navbar_icons"
-                />Support
-              </li>
-
-              <li>
-                <img
-                  src="images/shield-check.png"
-                  alt="privacy"
-                  class="navbar_icons"
-                />Privacy
-              </li>
-            </ul>
+          <div class="navbar_header">
+            <img src="images/view-dashboard-outline.png" alt="dashboard" />
+            <h1>Dashboard</h1>
           </div>
+
+          <ul class="navbar_list">
+            <li>
+              <img src="images/home.png" alt="Home" class="navbar_icons" />Home
+            </li>
+
+            <li>
+              <img
+                src="images/card-account-details.png"
+                alt="profile"
+                class="navbar_icons"
+              />Profile
+            </li>
+            <li>
+              <img
+                src="images/message-reply.png"
+                alt="message"
+                class="navbar_icons"
+              />Message
+            </li>
+
+            <li>
+              <img
+                src="images/clock-time-three-outline.png"
+                alt="clock"
+                class="navbar_icons"
+              />History
+            </li>
+
+            <li>
+              <img
+                src="images/file-multiple.png"
+                alt="tasks"
+                class="navbar_icons"
+              />Tasks
+            </li>
+
+            <li>
+              <img
+                src="images/account-group.png"
+                alt="communities"
+                class="navbar_icons"
+              />Communities
+            </li>
+
+            <!-- extra spacing -->
+
+            <li>
+              <img
+                src="images/cog-outline.png"
+                alt="settings"
+                class="navbar_icons"
+              />Settings
+            </li>
+
+            <li>
+              <img
+                src="images/folder-question-outline.png"
+                alt="support"
+                class="navbar_icons"
+              />Support
+            </li>
+
+            <li>
+              <img
+                src="images/shield-check.png"
+                alt="privacy"
+                class="navbar_icons"
+              />Privacy
+            </li>
+          </ul>
         </nav>
       </aside>
 
@@ -98,37 +94,36 @@
         <!-- top headers -->
         <div class="header-top">
           <div class="search">
-            <div class="search_item">
+            <div>
               <img src="images/magnify.png" alt="magnify" />
             </div>
             <input type="search" name="search" />
           </div>
-          <div class="first_logo">
-            <div class="morgan">
+          <div class="top_header_side">
+            <div class="bell_icon">
               <img src="images/bell-ring-outline.png" alt="bel" />
             </div>
-            <div class="baller">
+            <div>
               <img
                 src="images/dashboard logo.png"
                 alt="small logo"
-                class="baller_small"
+                class="top_logo"
               />
             </div>
-            <p class="name">Morgan Oakley</p>
+            <p>Morgan Oakley</p>
           </div>
         </div>
 
         <!-- header bottom -->
+
         <div class="header_bottom">
           <div class="profile_pics">
             <div class="second_logo">
               <img src="images/dashboard logo.png" alt="big logo" />
             </div>
-            <div class="pro_name">
-              <p class="hello">Hi there,</p>
-              <p class="big_name">
-                Morgan Oakley <span class="user_home">(@morgan)</span>
-              </p>
+            <div>
+              <p class="greetings">Hi there,</p>
+              <p class="bottom_name">Morgan Oakley <span>(@morgan)</span></p>
             </div>
           </div>
 
@@ -141,144 +136,144 @@
         </div>
       </header>
 
-      <main>
-        <div class="head">
-          <h3>Your project</h3>
+      <!-- card section -->
+      <section>
+        <div class="section_heading">
+          <h3>Your projects</h3>
           <h3>Announcement</h3>
         </div>
-
-        <!-- main layouts -->
-        <div class="card-container">
+        <div class="section_content">
           <article class="first_article">
-            <div class="content_cards">
-              <!-- individual cards  -->
+            <div class="card_content">
+              <!-- individual cards -->
               <div>
-                <h5 class="cards_title">Super Cool Project</h5>
-                <p class="lorem_text">
+                <h5>Super Cool Project</h5>
+                <p>
                   Dicta eum? Quae hic rem ducimus, incidunt sint laudantium
                   voluptatum ratione sed temporibus voluptatem, porro
-                  repudiandae, architecto nihil numquam atione sed temporibus
-                  voluptatem, porro repudiandae, architecto.
+                  repudiandae, architecto nihil numquamrepudiandae, architecto
+                  nihil numquam.
                 </p>
               </div>
               <div class="cards_icons">
                 <img src="images/star-plus-outline.png" alt="star_plus" />
-                <img src="images/eye-plus-outline (1).png" alt="eye_plus" />
+                <img src="images/eye-plus-outline.png" alt="eye_plus" />
                 <img src="images/source-fork.png" alt="source_fork" />
               </div>
             </div>
-            <div class="content_cards">
-              <!-- individual cards  -->
+            <div class="card_content">
               <div>
-                <h5 class="cards_title">Less Cool Project</h5>
-                <p class="lorem_text">
+                <h5>Less Cool Project</h5>
+                <p>
                   Dicta eum? Quae hic rem ducimus, incidunt sint laudantium
                   voluptatum ratione sed temporibus voluptatem, porro
-                  repudiandae, architecto nihil numquam atione sed temporibus
-                  voluptatem, porro repudiandae, architecto.
+                  repudiandae, architecto nihil numquam, repudiandae, architecto
+                  nihil numquam.
                 </p>
               </div>
               <div class="cards_icons">
                 <img src="images/star-plus-outline.png" alt="star_plus" />
-                <img src="images/eye-plus-outline (1).png" alt="eye_plus" />
+                <img src="images/eye-plus-outline.png" alt="eye_plus" />
                 <img src="images/source-fork.png" alt="source_fork" />
               </div>
             </div>
 
-            <div class="content_cards">
-              <!-- individual cards  -->
+            <div class="card_content">
               <div>
-                <h5 class="cards_title">Impossible App</h5>
-                <p class="lorem_text">
+                <h5>Impossible App</h5>
+                <p>
                   Dicta eum? Quae hic rem ducimus, incidunt sint laudantium
                   voluptatum ratione sed temporibus voluptatem, porro
-                  repudiandae, architecto nihil numquam atione sed temporibus
-                  voluptatem, porro repudiandae, architecto.
+                  repudiandae, architecto nihil numquam, repudiandae, architecto
+                  nihil numquam.
                 </p>
               </div>
               <div class="cards_icons">
                 <img src="images/star-plus-outline.png" alt="star_plus" />
-                <img src="images/eye-plus-outline (1).png" alt="eye_plus" />
+                <img src="images/eye-plus-outline.png" alt="eye_plus" />
                 <img src="images/source-fork.png" alt="source_fork" />
               </div>
             </div>
-            <div class="content_cards">
-              <!-- individual cards  -->
+            <div class="card_content">
               <div>
-                <h5 class="cards_title">Easy Peasy App</h5>
-                <p class="lorem_text">
+                <h5>Easy Peasy App</h5>
+                <p>
                   Dicta eum? Quae hic rem ducimus, incidunt sint laudantium
                   voluptatum ratione sed temporibus voluptatem, porro
-                  repudiandae, architecto nihil numquam atione sed temporibus
-                  voluptatem, porro repudiandae, architecto.
+                  repudiandae, architecto nihil numquam, repudiandae, architecto
+                  nihil numquam.
                 </p>
               </div>
               <div class="cards_icons">
                 <img src="images/star-plus-outline.png" alt="star_plus" />
-                <img src="images/eye-plus-outline (1).png" alt="eye_plus" />
+                <img src="images/eye-plus-outline.png" alt="eye_plus" />
                 <img src="images/source-fork.png" alt="source_fork" />
               </div>
             </div>
-            <div class="content_cards">
-              <!-- individual cards  -->
+            <div class="card_content">
               <div>
-                <h5 class="cards_title">Ad Blocker</h5>
-                <p class="lorem_text">
+                <h5>Ad Blocker</h5>
+                <p>
                   Dicta eum? Quae hic rem ducimus, incidunt sint laudantium
                   voluptatum ratione sed temporibus voluptatem, porro
-                  repudiandae, architecto nihil numquam atione sed temporibus
-                  voluptatem, porro repudiandae, architecto.
+                  repudiandae, architecto nihil numquam, repudiandae, architecto
+                  nihil numquam.
                 </p>
               </div>
               <div class="cards_icons">
                 <img src="images/star-plus-outline.png" alt="star_plus" />
-                <img src="images/eye-plus-outline (1).png" alt="eye_plus" />
+                <img src="images/eye-plus-outline.png" alt="eye_plus" />
                 <img src="images/source-fork.png" alt="source_fork" />
               </div>
             </div>
-            <div class="content_cards">
+            <div class="card_content">
               <div>
-                <h5 class="cards_title">Money Maker</h5>
-                <p class="lorem_text">
+                <h5>Money Maker</h5>
+                <p>
                   Dicta eum? Quae hic rem ducimus, incidunt sint laudantium
-                  voluptatum ratione sed temporibus voluptatem, porro
-                  repudiandae, architecto nihil numquam atione sed temporibus
-                  voluptatem, porro repudiandae, architecto.
+                  voluptatum ratione sed temporibus voluptatem, porro,
+                  repudiandae, architecto nihil numquam,repudiandae, architecto
+                  nihil numquam.
                 </p>
               </div>
               <div class="cards_icons">
                 <img src="images/star-plus-outline.png" alt="star_plus" />
-                <img src="images/eye-plus-outline (1).png" alt="eye_plus" />
+                <img src="images/eye-plus-outline.png" alt="eye_plus" />
                 <img src="images/source-fork.png" alt="source_fork" />
               </div>
             </div>
           </article>
-          <div class="announcement_trend">
+
+          <div class=".announcement_trend">
             <div class="announcement">
               <article class="second_article">
                 <ul class="announce_ul">
                   <li class="listed_annouce">
-                    <h5 class="header_annouce">site Maintenance</h5>
-                    <p class="lorem_para">
+                    <h5>Site Maintenance</h5>
+                    <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Tempore soluta ullam doloremque maiores provident
-                      eligendi, perspiciatis voluptate dolorum eaque quae.
+                      eligendi.
                     </p>
+                    <br />
+                    <hr />
                   </li>
                   <li class="listed_annouce">
-                    <h5 class="header_annouce">Community Share Day</h5>
-                    <p class="lorem_para">
+                    <h5>Community Share Day</h5>
+                    <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Tempore soluta ullam doloremque maiores provident
-                      eligendi, perspiciatis voluptate dolorum eaque quae.
+                      eligendi.
                     </p>
+                    <br />
+                    <hr />
                   </li>
                   <li class="listed_annouce">
-                    <h5 class="header_annouce">Updated Privacy Policy</h5>
-                    <p class="lorem_para">
+                    <h5>Updated Privacy Policy</h5>
+                    <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Tempore soluta ullam doloremque maiores provident
-                      eligendi, perspiciatis voluptate dolorum eaque quae.
+                      eligendi.
                     </p>
                   </li>
                 </ul>
@@ -288,42 +283,42 @@
             <!-- Trending  -->
             <div class="trending">
               <h3>Trending</h3>
-              <article>
+              <article class="third_article">
                 <ul class="trending_list">
                   <li class="trends">
-                    <div class="football_logo">
+                    <div>
                       <img src="images/first2_logo.jpg" alt="first_logo1" />
                     </div>
-                    <div class="tegan">
-                      <p class="tegan_1">@tegan</p>
-                      <p class="world_peace">World Peace Builder</p>
+                    <div>
+                      <p class="trend_names">@tegan</p>
+                      <p>World Peace Builder</p>
                     </div>
                   </li>
-                  <li class="trends_1">
-                    <div class="football_logo_1">
+                  <li class="trends">
+                    <div>
                       <img src="images/dashboard logo.png" alt="first_logo1" />
                     </div>
-                    <div class="tegan">
-                      <p class="tegan_1">@morgan</p>
-                      <p class="world_peace">Super Cool Project</p>
+                    <div>
+                      <p class="trend_names">@morgan</p>
+                      <p>Super Cool Project</p>
                     </div>
                   </li>
-                  <li class="trends_2">
-                    <div class="football_logo_2">
+                  <li class="trends">
+                    <div>
                       <img src="images/third_logo.jpg" alt="first_logo1" />
                     </div>
-                    <div class="tegan">
-                      <p class="tegan_1">@kendall</p>
-                      <p class="world_peace">Life Changing App</p>
+                    <div>
+                      <p class="trend_names">@kendall</p>
+                      <p>Life Changing App</p>
                     </div>
                   </li>
-                  <li class="trends_3">
-                    <div class="football_logo_3">
+                  <li class="trends">
+                    <div>
                       <img src="images/last_logo.jpg" alt="first_logo1" />
                     </div>
-                    <div class="tegan">
-                      <p class="tegan_1">@alex</p>
-                      <p class="world_peace">No Traffic Maker</p>
+                    <div>
+                      <p class="trend_names">@alex</p>
+                      <p>No Traffic Maker</p>
                     </div>
                   </li>
                 </ul>
@@ -331,7 +326,7 @@
             </div>
           </div>
         </div>
-      </main>
-    </div>
+      </section>
+    </main>
   </body>
 </html>

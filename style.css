@@ -1,16 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;700;800&family=Josefin+Sans:ital,wght@0,400;0,500;1,400&display=swap");
-
-:root {
+root {
   --font-family: "Crete Round", serif;
   --font-family: "Inter", sans-serif;
   --font-family: "Josefin Sans", sans-serif;
-  --blue: #1992d4;
   --light-gray: #e2e8f0;
   --dark-yellow: #f0b429;
-  --pink: #fda4af;
   --gray: #a3a3a3;
   --gray-blue: #e0f2fe;
-  --sun-yellow: #facc15;
 }
 
 * {
@@ -19,27 +14,56 @@
   margin: 0;
   font-family: "inter", sans-serif;
 }
+/* styling of the main container */
 
-.container {
+.main-container {
   display: grid;
-  grid-template-columns: 12rem 1fr 1fr 1fr;
-  grid-template-rows: 1fr 4fr;
-  height: 100vh;
-  width: 100vw;
-  grid-template-areas:
-    "drawer nav nav nav"
-    "drawer content content content";
+  grid-template-columns: 13rem repeat(3, 1fr);
+  grid-template-rows: 170px repeat(4, 1fr);
 }
 
-.dashboard {
-  grid-area: drawer;
-  background-color: var(--blue);
-  width: 13rem;
-  position: fixed;
-  height: 100vh;
+aside {
+  grid-column: 1 / 2;
+  grid-row: 1 / 6;
+  background-color: blue;
+}
+/* styling of the navigation bar */
+
+nav .navbar_header {
+  padding-top: 30px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 60px;
 }
 
-.navbar_icons {
+nav .navbar_header img {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  margin-right: 12px;
+  padding-left: 15px;
+}
+
+nav .navbar_header h1 {
+  padding-top: 5px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+nav .navbar_list li {
+  display: flex;
+  padding-left: 20px;
+  color: white;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px;
+  padding-left: 20px;
+}
+
+nav .navbar_icons {
   color: white;
   display: flex;
   flex-direction: column;
@@ -48,214 +72,257 @@
   margin-right: 19px;
 }
 
-.navbar_draw li {
-  display: flex;
-  padding-left: 20px;
-  color: white;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 10px;
-  padding-left: 20px;
+nav > ul :nth-child(7) {
+  padding-top: 8.5rem;
 }
 
-.dashboard_drawer {
-  padding-top: 15px;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 25px;
-}
-.dashboard_drawer img {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 45px;
-  margin-right: 12px;
-  padding-left: 15px;
-}
-.dashboard_drawer h1 {
-  padding-top: 5px;
-  font-size: 18px;
-  font-weight: normal;
-}
-
-.dashboard > ul :nth-child(7) {
-  padding-top: 3.13rem;
-}
+/* header styling */
 
 header {
-  grid-area: nav;
-  background-color: var(--pink);
-  padding: 1.5rem 3rem 1.5rem 4rem;
+  grid-column: 2 / 5;
+  background-color: skyblue;
+  padding: 1.5rem 3rem 2rem 3.5rem;
 }
 
-.header-top {
+header .header-top {
   display: grid;
   grid-template-columns: 1fr max-content;
   margin-bottom: 2.5rem;
-  height: 50px;
+  height: 30px;
 }
 
-.search {
+header .search {
   display: flex;
   align-items: center;
   width: 100%;
   margin-bottom: 60px;
 }
 
-.search_item img {
+header > img {
   padding-top: 5px;
 }
 
-.search > input {
+header .search > input {
   display: inline-block;
   border: none;
-  background-color: var(--light-gray);
-  width: min(80%, 30rem);
+  background-color: lightgray;
+  width: min(90%, 37rem);
   padding: 0.3rem 1.5rem;
   margin-left: 1.25rem;
   border-radius: 12px;
 }
 
-.first_logo {
+header .top_header_side {
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-weight: bold;
-  margin-left: 10px;
-  margin-right: 25px;
   padding-bottom: 40px;
+  padding-right: 40px;
 }
 
-.first_logo img {
+header .top_header_side img {
   border-radius: 50%;
   margin-left: 10px;
   margin-right: 20px;
 }
 
-.baller_small {
+header .top_logo {
   width: 50%;
 }
 
-div.morgan {
+header .bell_icon {
   margin-right: 10px;
   padding-bottom: 10px;
 }
 
-.first_logo p {
+header .top_header_side p {
   font-size: 16px;
   padding-bottom: 10px;
   padding-left: 7px;
 }
 
-.header_bottom {
+header .header_bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.profile_pics {
+
+header .profile_pics {
   display: flex;
   align-items: center;
   gap: 1.2rem;
 }
 
-.second_logo img {
-  width: 65px;
+header .second_logo img {
+  width: 60px;
   border-radius: 50%;
 }
 
-.hello {
+header .greetings {
   margin-bottom: 5px;
   font-size: small;
   font-weight: bold;
 }
 
-.big_name {
+header .bottom_name {
   font-size: 17px;
   font-weight: bolder;
 }
 
-.button {
+header .button {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 2rem;
+  padding-right: 25px;
 }
 
-.btn {
-  background-color: var(--blue);
+header .btn {
+  background-color: blue;
   color: white;
   border: none;
-  padding: 8px 20px;
-  font-size: 16px;
+  padding: 8px 30px;
+  font-size: 14px;
   border-radius: 20px;
 }
 
-main {
-  background-color: var(--gray);
-  padding: 1.5rem 1rem 1rem 2rem;
+/* section styling */
+
+section {
+  grid-column: 2 / 5;
+  grid-row: 2 / 6;
   gap: 20px;
-  grid-area: content;
+  background-color: grey;
+  padding: 30px 20px 40px 20px;
 }
 
-.head {
+section .section_heading {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-right: 195px;
+  margin-left: 20px;
+  padding-right: 33px;
+  font-size: 1rem;
 }
 
-.card-container {
+section .section_content {
   display: grid;
   grid-template-areas:
-    "project project aside"
-    "project project aside";
-  gap: 20px;
+    "cards cards aside"
+    "cards cards aside";
+  column-gap: 20px;
+  row-gap: 20px;
   padding: 20px;
-  height: 100%;
 }
 
-.card-container .first_article {
+section .first_article {
+  grid-area: cards;
+}
+
+section .card_content {
+  background-color: lightgrey;
+  margin-bottom: 20px;
+  margin-right: 5px;
+  border-left: 10px solid #f0b429;
+  border-radius: 7px;
+  box-shadow: 0px 5px 3px -2px #ada7b2;
+}
+
+section .card_content h5 {
+  font-weight: bold;
+  font-size: 16px;
+  padding-left: 15px;
+  padding-top: 40px;
+}
+
+section .card_content p {
+  padding-left: 15px;
+  padding-top: 10px;
+  font-size: 18px;
+}
+
+section .cards_icons {
+  margin-top: auto;
+  display: flex;
+  align-items: flex-end;
+  align-self: end;
+  justify-content: flex-end;
+  gap: 1.3rem;
+  padding-top: 50px;
+  padding-right: 20px;
+}
+
+section .first_article {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-row: auto;
-  grid-area: project;
+  grid-area: cards;
   justify-content: center;
-  gap: 20px;
+  column-gap: 25px;
+  row-gap: 10px;
 }
 
-.card-container .content_cards {
-  padding: 20px;
-  background: var(--gray-blue);
-  border-left: 10px solid orange;
-  border-radius: 10px;
-}
+/* announcement and trending styling */
 
-.announcement_trend {
+section .announcement_trend {
   grid-area: aside;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 50%;
 }
 
-.announcement {
-  background-color: white;
+section .second_article {
+  border-radius: 7px;
+  background-color: lightgrey;
+  box-shadow: 0px 5px 3px -2px #ada7b2;
+  margin-bottom: 70px;
 }
 
-.announcement_trend li {
+section .second_article li {
   list-style: none;
+  height: 120px;
 }
 
-.trending ul {
-  margin-top: 50px;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
+section .announce_ul {
+  padding-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.trending_list img {
+section .announce_ul h5 {
+  font-weight: bolder;
+  padding-bottom: 5px;
+  font-size: 14px;
+}
+
+section .third_article > ul li {
+  list-style: none;
+  height: 100px;
+}
+
+section .third_article {
+  border-radius: 7px;
+  background-color: lightgrey;
+  box-shadow: 0px 5px 3px -2px #ada7b2;
+}
+
+section .third_article img {
   border-radius: 50%;
   width: 50px;
+}
+section .trending_list .trends {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  column-gap: 15px;
+}
+
+section .trending h3 {
+  margin-bottom: 10px;
+}
+
+section .trend_names {
+  font-weight: bold;
+  margin-bottom: 5px;
 }
