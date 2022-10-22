@@ -105,7 +105,7 @@ header > img {
 header .search > input {
   display: inline-block;
   border: none;
-  background-color: lightgray;
+  background-color: #e2e8f0;
   width: min(90%, 37rem);
   padding: 0.3rem 1.5rem;
   margin-left: 1.25rem;
@@ -193,7 +193,7 @@ section {
   grid-column: 2 / 5;
   grid-row: 2 / 6;
   gap: 20px;
-  background-color: grey;
+  background-color: #e2e8f0;
   padding: 30px 20px 40px 20px;
 }
 
@@ -243,14 +243,31 @@ section .card_content p {
 }
 
 section .cards_icons {
-  margin-top: auto;
+  /* margin-top: auto; */
+  /* display: flex; */
+  /* align-items: flex-end; */
+  /* align-self: end; */
+  /* justify-content: flex-end; */
+  /* gap: 1.3rem; */
+  /* padding-top: 50px; */
+  /* padding-right: 20px; */
+}
+
+.cards-ul {
   display: flex;
-  align-items: flex-end;
-  align-self: end;
   justify-content: flex-end;
-  gap: 1.3rem;
-  padding-top: 50px;
-  padding-right: 20px;
+  margin-top: auto;
+  padding-top: 30px;
+}
+
+.cards-ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.cards_icons img {
+  width: 20px;
+  height: 20px;
 }
 
 section .first_article {
