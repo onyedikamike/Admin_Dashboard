@@ -12,7 +12,7 @@ root {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "inter", sans-serif;
+  font-family: "roboto", sans-serif;
 }
 /* styling of the main container */
 
@@ -81,6 +81,7 @@ nav > ul :nth-child(7) {
 header {
   grid-column: 2 / 5;
   background-color: skyblue;
+  box-shadow: 0px 4px 5px -1px #7e7e7f;
   padding: 1.5rem 3rem 2rem 3.5rem;
 }
 
@@ -187,6 +188,10 @@ header .btn {
   border-radius: 20px;
 }
 
+button :hover {
+  background-color: aqua;
+}
+
 /* section styling */
 
 section {
@@ -242,22 +247,12 @@ section .card_content p {
   font-size: 18px;
 }
 
-section .cards_icons {
-  /* margin-top: auto; */
-  /* display: flex; */
-  /* align-items: flex-end; */
-  /* align-self: end; */
-  /* justify-content: flex-end; */
-  /* gap: 1.3rem; */
-  /* padding-top: 50px; */
-  /* padding-right: 20px; */
-}
-
 .cards-ul {
   display: flex;
   justify-content: flex-end;
   margin-top: auto;
-  padding-top: 30px;
+  padding-top: 55px;
+  margin-right: 35px;
 }
 
 .cards-ul li {
